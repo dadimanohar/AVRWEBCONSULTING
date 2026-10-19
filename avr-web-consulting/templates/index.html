@@ -1,0 +1,28 @@
+<!-- wp:template-part {"slug":"header","theme":"avr-web-consulting","tagName":"header"} /-->
+
+<main class="wp-site-blocks flex-1 py-12 lg:py-16">
+  <div class="container-page">
+    <!-- wp:query {"queryId":2,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+    <div class="wp-block-query">
+      <!-- wp:post-template {"className":"grid gap-8 sm:grid-cols-2 lg:grid-cols-3"} -->
+        <article class="flex flex-col rounded-3xl border border-border bg-card p-6 shadow-sm hover:border-primary transition-all duration-200">
+          <!-- wp:post-featured-image {"isLink":true,"className":"rounded-2xl overflow-hidden aspect-[16/9] object-cover mb-4"} /-->
+          <div class="flex items-center gap-2 text-xs text-muted-foreground mb-2">
+            <!-- wp:post-date /-->
+          </div>
+          <!-- wp:post-title {"isLink":true,"level":2,"className":"text-xl font-bold font-display text-foreground hover:text-primary mb-3 leading-snug"} /-->
+          <!-- wp:post-excerpt {"moreText":"Read article →","className":"text-sm text-foreground/80 leading-relaxed mb-4 flex-1"} /-->
+        </article>
+      <!-- /wp:post-template -->
+
+      <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"},"className":"mt-12 flex gap-2"} -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next /-->
+      <!-- /wp:query-pagination -->
+    </div>
+    <!-- /wp:query -->
+  </div>
+</main>
+
+<!-- wp:template-part {"slug":"footer","theme":"avr-web-consulting","tagName":"footer"} /-->
